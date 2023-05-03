@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    <link rel="stylesheet" href="styles/styles.css"
+    <title>Frontend Mentor | Stats preview card component</title>
 
-    body {
-      background-color: hsl(233, 47%, 7%);
-    }
-    #flex-container {
-      display: flex;
-      width: 900px;
-      height: 400px;
-      margin: 200px auto;
-      background-color: hsl(244, 38%, 16%);
-      color: white;
-    }
+  </head>
 
-    .right {
-      flex-grow: 3;
-      width: 50%;
-    }
+  <body>
 
-    .left {
-      width: 50%;
-      flex-grow: 5;
-    }
+  <div class="flex-container">
+    <div class="flex-child left">
+      <h1>Get <span class="text-color">insights</span> that help your business grow.</h1>
 
-    img {
-      max-height: 400px;
-    }
+      <p class="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
-  </style>
-</head>
-<body>
+      <div class="flex-container-row">
 
-<div id="flex-container">
-  <div class="flex-child left">
-    <h1>Get insights that help your business grow.</h1>
+        <div>
+          <span>10k+</span>
+          <p>companies</p>
+        </div>
 
-  <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div>
+          <span>314</span>
+          <p>templates</p>
+        </div>
 
-  <div id="flex-container-row">
-  10k+ companies
-  314 templates
-  12m+ queries
-</div>
-  </div>
-  <div class="flex-child right">
-    <img src="images/image-header-desktop.jpg"></img>
+        <div>
+          <span>12M+</span>
+          <p>queries</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex-child right">
+      <img class="pc" src="images/image-header-desktop.jpg" alt="" />
+      <img class="mobile" src="images/image-header-mobile.jpg" alt="" />
+    </div>
+
   </div>
 
-</div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
+
 </html>
